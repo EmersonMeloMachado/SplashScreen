@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
 using UIKit;
 
 namespace SplashScreen.iOS
@@ -22,10 +18,24 @@ namespace SplashScreen.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            if(Window == null)
+            {
+                Window = new UIWindow(frame: UIScreen.MainScreen.Bounds);
+                var initialViewController = new SplashScreenViewController();
+                Window.RootViewController = initialViewController;
+                Window.MakeKeyAndVisible();
 
-            return base.FinishedLaunching(app, options);
+                return true;
+            }
+            else
+            {
+
+                global::Xamarin.Forms.Forms.Init();
+                LoadApplication(new App());
+
+                return base.FinishedLaunching(app, options);
+
+            }
         }
     }
 }
