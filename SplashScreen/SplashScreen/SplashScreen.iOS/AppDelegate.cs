@@ -1,5 +1,6 @@
-﻿using Foundation;
-using UIKit;
+﻿using UIKit;
+using Foundation;
+using Lottie.Forms.iOS.Renderers;
 
 namespace SplashScreen.iOS
 {
@@ -31,6 +32,7 @@ namespace SplashScreen.iOS
             {
 
                 global::Xamarin.Forms.Forms.Init();
+                AnimationViewRenderer.Init();
                 LoadApplication(new App());
 
                 return base.FinishedLaunching(app, options);
