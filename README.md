@@ -9,4 +9,4 @@ Irei listar abaixo cada uma delas e justificar o seu uso.
 Lottie - Plugin desenvolvido pela conhecida Airbnb, onde o mesmo nos possibilita 
 utilizar animações em nossas aplicações, dando mais vida aos nossos apps.
 
-! [Android] (https://github.com/EmersonMeloMachado/SplashScreen/blob/master/bloggif_5e7b8bc4e1c34.gif)
+![Android](https://raw.githubusercontent.com/EmersonMeloMachado/SplashScreen/master/bloggif_5e7b8bc4e1c34.gif)
