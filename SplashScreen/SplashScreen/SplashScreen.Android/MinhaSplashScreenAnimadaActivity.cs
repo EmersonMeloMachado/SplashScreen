@@ -1,21 +1,22 @@
-﻿using Android.Animation;
+﻿using Android.OS;
 using Android.App;
 using Android.Content;
-using Android.OS;
+using Android.Animation;
 using Com.Airbnb.Lottie;
 
 namespace SplashScreen.Droid
 {
     [Activity(Theme = "@style/Theme.Splash", MainLauncher = true, NoHistory = true)]
-    public class SplashScreenActivity : Activity, Animator.IAnimatorListener
+    public class MinhaSplashScreenAnimadaActivity : Activity, Animator.IAnimatorListener
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.Activity_SplashScreen);
+
+            SetContentView(Resource.Layout.Activity_MinhaSplashScreen);
 
             LottieAnimationView animationView = FindViewById<LottieAnimationView>(Resource.Id.animation_view);
+
             animationView.AddAnimatorListener(this);
         }
 

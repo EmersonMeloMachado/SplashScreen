@@ -3,22 +3,17 @@ using Airbnb.Lottie;
 
 namespace SplashScreen.iOS
 {
-    public partial class SplashScreenViewController : UIViewController
+    public partial class MinhaSplashScreenAnimadaViewController : UIViewController
     {
-        public SplashScreenViewController() : base()
-        {
-        }
+        public MinhaSplashScreenAnimadaViewController() : base() { }
 
-        /// <summary>
-        /// 
-        /// </summary>
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            var animationView = LOTAnimationView.AnimationNamed("Logo");
+            var viewAnimation = LOTAnimationView.AnimationNamed("Logo");
 
-            this.View.AddSubview(animationView);
-            animationView.PlayWithCompletion((animationFinished) =>
+            View.AddSubview(viewAnimation);
+            viewAnimation.PlayWithCompletion((finished) =>
             {
                 UIApplication.SharedApplication.Delegate.FinishedLaunching(UIApplication.SharedApplication,
                                                                            new Foundation.NSDictionary());
