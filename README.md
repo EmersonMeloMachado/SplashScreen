@@ -11,3 +11,6 @@ utilizar animações em nossas aplicações, dando mais vida aos nossos apps.
 
 # Android
 ![Android](https://raw.githubusercontent.com/EmersonMeloMachado/SplashScreen/master/bloggif_5e7b8bc4e1c34.gif)
+
+# iOS
+![iOS](https://github.com/EmersonMeloMachado/SplashScreen/blob/master/Ios.gif)
